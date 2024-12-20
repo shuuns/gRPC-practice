@@ -76,3 +76,15 @@ if __name__ == '__main__':
 6. 運行服務端和客戶端：
 - 先運行服務端，再運行客戶端來測試。
 
+
+
+## Build and deploy
+build
+```
+podman build -t my-grpc-app .
+```
+
+run
+```
+podman run -d -p 50051:50051 my-grpc-app
+```
